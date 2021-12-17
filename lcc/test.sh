@@ -16,8 +16,13 @@ assert() {
 	fi
 }
 
+# add at step1
 assert 0 0
+# add at step2
 assert 42 42
+# add at step3
 assert 21 "5+20-4"
+# add at step 4
+assert 41 " 12 + 34 - 5 "
 
 echo OK
