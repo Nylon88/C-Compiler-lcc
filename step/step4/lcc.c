@@ -64,7 +64,7 @@ void error(char *fmt, ...) {
 // それ以外の場合にはエラーを報告する。
 void expect(char op) {
   if (token->kind != TK_RESERVED || token->str[0] != op)
-    error_at(token->str, "'%c'を予想しています", op);
+    error_at(token->str, "「+」または「-」の演算子を予想しています");
   token = token->next;
 }
 
